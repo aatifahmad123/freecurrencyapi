@@ -1,0 +1,92 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("./public/currency.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 700px) {
+  .container {
+    transition: transform 0.5s ease;
+  }
+  .container:hover {
+    transform: scale(1.5);
+  }
+}
+
+
+#final {
+    padding-right: 5px;
+}
+
+
+.container {
+  background-color: rgba(245, 245, 220, 0.603);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+p {
+  display: inline;
+}
+.Dropdown {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.From {
+  display: inline;
+  display: flex;
+  align-items: center;
+  gap: 0px 2px;
+}
+
+.To {
+  display: inline;
+  display: flex;
+  align-items: center;
+  gap: 0px 2px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.Output {
+  margin-top: 25px;
+}
+
+#exchange {
+  height: 15px;
+  width: 15px;
+}
+
+input{
+    width: 150px;
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #023047;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+button:hover{
+    background-color: #22577a;
+}
