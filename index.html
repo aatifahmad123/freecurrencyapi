@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Converter</h2>
+      <form>
+        <div class="Amount">
+          <label for="inputamt">Enter Amount</label>
+          <input type="text" id="inputamt" value="100" name="inputamt"/>
+        </div>
+        <div class="Dropdown">
+          <div class="From">
+            <p>From</p>
+            <select name="fromcurr" id="fromcurr">
+              <option value="INR" selected>INR</option>
+            </select>
+            <img src="https://flagsapi.com/IN/flat/32.png" id="fromimg" />
+          </div>
+          <img src="./public/exchange.png" alt="exchange" id="exchange" />
+          <div class="To">
+            <p>To</p>
+            <select name="tocurr" id="tocurr">
+              <option value="INR" selected>INR</option>
+            </select>
+            <img src="https://flagsapi.com/IN/flat/32.png" id="toimg" />
+          </div>
+        </div>
+        <div class="btn">
+          <button>Convert</button>
+        </div>
+        <div class="Output">
+          <label for="outputamt" id="final">Your Amount</label>
+          <input
+            type="text"
+            id="outputamt"
+            value="100"
+            name="outputamt"
+            readonly
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
